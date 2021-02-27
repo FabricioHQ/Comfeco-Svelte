@@ -24,7 +24,7 @@
       font-family: var(--font-title);
       font-size: 32px;
       font-weight: 500;
-      color: #8a178c;
+      color: var(--color-primary-1);
     }
     .cards_page_comunidades {
       margin-top: 3rem;

@@ -43,11 +43,6 @@
         width: 20px;
         height: 20px;
         margin: 0 10px;
-
-        img {
-          border: none;
-          outline: none;
-        }
       }
     }
     .info {
@@ -61,7 +56,7 @@
         width: 6rem;
         height: 6rem;
         border-radius: 50%;
-        border: none;
+        border: 2.5px solid var(--color-gray-1);
       }
 
       p {

@@ -13,7 +13,7 @@
     width: 100%;
     height: calc(100vh - 5rem);
     position: relative;
-    background-image: url('/images/community_banner.jpg');
+    background-image: url('/images/community/community_banner.jpg');
     background-size: cover;
     background-position: center;
     display: grid;
