@@ -1,5 +1,6 @@
 <script lang="ts">
   import Logo from '../Utils/Icons/Logo.svelte';
+  import Account from './Account/Account.svelte';
   import Menu from './Menu.svelte';
 
   export let page;
@@ -8,6 +9,7 @@
 <nav>
   <Logo size={48} />
   <Menu {page} />
+  <Account />
 </nav>
 
 <style lang="scss">
@@ -15,15 +17,16 @@
     width: 100%;
     height: 5rem;
     background-color: var(--color-white-1);
-    position: relative;
     position: sticky;
     top: 0;
+    left: 0;
     display: grid;
     grid-template-columns: 8fr 15fr 8fr;
     grid-template-rows: 1fr;
     grid-gap: 4rem;
     padding: 0 3rem;
     align-items: center;
+    z-index: 100;
 
     &::after {
       content: '';

@@ -1,9 +1,7 @@
 <script lang="ts">
 </script>
 
-<main>
-  <slot />
-</main>
+<slot />
 
 <style lang="scss">
   :global(*, *::after, *::before) {
@@ -41,15 +39,5 @@
     --box-shadow: 0px 0px 2px 0.5px;
     --font-title: 'Roboto Slab';
     --font-text: 'Roboto';
-  }
-
-  main {
-    width: 100%;
-    min-height: 100vh;
-    background-color: var(--background);
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s;
-    overflow: hidden;
   }
 </style>

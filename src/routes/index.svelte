@@ -1,8 +1,7 @@
 <script lang="ts">
-  import LayoutBase from "../components/Layout/Layout_Base.svelte";
+  import LayoutBase from '../components/Layout/Layout_Base.svelte';
 
   let page: string = 'home';
-
 </script>
 
 <svelte:head>
@@ -11,11 +10,11 @@
 
 <LayoutBase {page}>
   <div class="home">
-    <h1>Comfeco - Home</h1>
+    <h1 class="text-primary font-slab">Comfeco - Home</h1>
   </div>
 </LayoutBase>
 
-<style lang="scss">
+<!-- <style lang="scss">
   .home {
     width: 100%;
     height: 100vh;
@@ -29,4 +28,4 @@
       color: var(--color-black-1);
     }
   }
-</style>
+</style> -->
