@@ -2,17 +2,19 @@
   export let page;
   let items = {
     home: page === 'home' ? true : false,
-    community: page === 'activity' ? true : false,
-    workshops: page === 'ticket' ? true : false,
-    projects: page === 'save' ? true : false,
+    events: page === 'events' ? true : false,
+    community: page === 'community' ? true : false,
+    workshops: page === 'workshops' ? true : false,
+    projects: page === 'projects' ? true : false,
   };
 </script>
 
 <div class="menu">
-  <a href="/" class:active={items.home}>Home</a>
-  <a href="/" class:active={items.community}>Community</a>
-  <a href="/" class:active={items.workshops}>Workshops</a>
-  <a href="/" class:active={items.projects}>Projects</a>
+  <a href="/" class:active={items.home}>Inicio</a>
+  <a href="/events" class:active={items.events}>Eventos</a>
+  <a href="/workshops" class:active={items.workshops}>Talleres</a>
+  <a href="/projects" class:active={items.projects}>Proyectos</a>
+  <a href="/community" class:active={items.community}>Comunidad</a>
 </div>
 
 <style lang="scss">
@@ -23,9 +25,9 @@
     a {
       display: inline-flex;
       font-family: var(--font-title);
-      font-weight: 500;
+      font-weight: bold;
       color: var(--color-black-1);
-      font-size: 1.25rem;
+      font-size: 1rem;
       align-items: center;
       justify-content: center;
       margin-right: 2.5rem;
