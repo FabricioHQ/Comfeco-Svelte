@@ -12,13 +12,3 @@
 <LayoutBase {page}>
   <SignUpForm />
 </LayoutBase>
-
-<style lang="scss">
-  *,
-  *::after,
-  *::before {
-    box-sizing: border-box;
-    /* border: none; */
-    outline: none;
-  }
-</style>

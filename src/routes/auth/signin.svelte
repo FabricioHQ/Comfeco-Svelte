@@ -11,13 +11,3 @@
 <LayoutBase {page}>
   <SigninForm />
 </LayoutBase>
-
-<style>
-  *,
-  *::after,
-  *::before {
-    box-sizing: border-box;
-    /* border: none; */
-    outline: none;
-  }
-</style>
