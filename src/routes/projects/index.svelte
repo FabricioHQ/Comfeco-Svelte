@@ -1,13 +1,15 @@
 <script lang="ts">
-  import SigninForm from '../../components/Auth/SignIn/SignIn_Form.svelte';
   import LayoutBase from '../../components/Layout/Layout_Base.svelte';
-  let page: string = 'signin';
+  let page: string = 'projects';
 </script>
 
 <svelte:head>
-  <title>Iniciar sesión</title>
+  <title>Proyectos</title>
 </svelte:head>
 
 <LayoutBase {page}>
-  <SigninForm />
+  <h1>Workshops</h1>
 </LayoutBase>
+
+<style>
+</style>

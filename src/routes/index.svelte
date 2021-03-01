@@ -1,8 +1,31 @@
 <script lang="ts">
-  import LayoutBase from "../components/Layout/Layout_Base.svelte";
-
+  import HomeBanner from '../components/Home/Home_Banner.svelte';
+  import CommunitySectionComponent from '../components/Community/Component/Community_Section.svelte';
+  // import CommunityUnete from '../components/Community/Community_Unete.svelte';
+  import LayoutBase from '../components/Layout/Layout_Base.svelte';
+  // import LayoutBase from '../components/Layout/Layout_Base.svelte';
   let page: string = 'home';
 
+  let comunidades = [
+    {
+      name: 'Comunidad de Programadores',
+      users: 3775,
+      img: '/images/community/comunidad_de_programadores.png',
+      url: 'https://discord.com/invite/5Bb5yvzNPr',
+    },
+    {
+      name: 'CodelyTV',
+      users: 75026,
+      img: '/images/community/codelytv.png',
+      url: 'https://codely.tv/',
+    },
+    {
+      name: 'CódigoFacilito',
+      users: 69108,
+      img: '/images/community/codigo_facilito.png',
+      url: 'https://codigofacilito.com/',
+    },
+  ];
 </script>
 
 <svelte:head>
@@ -10,23 +33,10 @@
 </svelte:head>
 
 <LayoutBase {page}>
-  <div class="home">
-    <h1>Comfeco - Home</h1>
-  </div>
+  <HomeBanner />
+  <CommunitySectionComponent {comunidades} />
+  <!-- <CommunityUnete /> -->
 </LayoutBase>
 
-<style lang="scss">
-  .home {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-
-    h1 {
-      font-family: var(--font-title);
-      font-weight: medium;
-      font-size: 48px;
-      color: var(--color-black-1);
-    }
-  }
+<style>
 </style>

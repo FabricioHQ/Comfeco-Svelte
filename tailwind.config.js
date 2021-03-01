@@ -16,12 +16,18 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      roboto: 'Roboto Slab',
+      slab: 'Roboto Slab',
       sans: ['ui-sans-serif', 'system-ui'],
       serif: ['ui-serif', 'Georgia'],
       mono: ['ui-monospace', 'SFMono-Regular'],
       display: ['Oswald'],
       body: ['Open Sans'],
+    },
+    textColor: {
+      primary: '#8a178c',
+      secondary: '#ffb703',
+      terciary: '#521e87',
+      background: '#edf2f6',
     },
   },
   variants: {
