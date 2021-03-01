@@ -1,8 +1,10 @@
 <script lang="ts">
-  import CommunityBanner from '../../components/Community/Community_Banner.svelte';
-  import CommunitySection from '../../components/Community/Community_Section.svelte';
-  import CommunityUnete from '../../components/Community/Community_Unete.svelte';
   import LayoutBase from '../../components/Layout/Layout_Base.svelte';
+
+  import CommunityBanner from '../../components/Community/Community_Banner.svelte';
+  import CommunitySection from '../../components/Community/Page/Community_Section.svelte';
+  import CommunityUnete from '../../components/Community/Community_Unete.svelte';
+
   let page: string = 'community';
 
   let comunidades = [
