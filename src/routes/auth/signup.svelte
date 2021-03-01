@@ -1,18 +1,19 @@
 <script lang="ts">
-  import SigninForm from '../../components/Auth/SignIn/SignIn_Form.svelte';
+  import SignUpForm from '../../components/Auth/SignUp/SignUp_Form.svelte';
   import LayoutBase from '../../components/Layout/Layout_Base.svelte';
-  let page: string = 'signin';
+
+  let page: string = 'signup';
 </script>
 
 <svelte:head>
-  <title>Iniciar sesión</title>
+  <title>Registrarse</title>
 </svelte:head>
 
 <LayoutBase {page}>
-  <SigninForm />
+  <SignUpForm />
 </LayoutBase>
 
-<style>
+<style lang="scss">
   *,
   *::after,
   *::before {
