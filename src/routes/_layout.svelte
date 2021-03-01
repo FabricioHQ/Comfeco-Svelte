@@ -10,6 +10,11 @@
     outline: none;
   }
 
+  :global(img) {
+    border: none;
+    outline: none;
+  }
+
   :global(body) {
     --background: #edf2f6;
 
