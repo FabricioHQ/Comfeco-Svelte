@@ -1,4 +1,7 @@
 <script>
+  import Calendar from '../Utils/Icons/Calendar.svelte';
+  import Community from '../Utils/Icons/Community.svelte';
+  import Star from '../Utils/Icons/Star.svelte';
 </script>
 
 <section>
@@ -15,7 +18,32 @@
         ¡Súmate a la comunidad!
       </p>
     </div>
-    <div class="card" />
+    <div class="card">
+      <div class="paragraph">
+        <Calendar size={32} color={'#8A178C'} />
+        <p>
+          Una serie de eventos donde los participantes demuestran sus
+          habilidades en diferentes competencias: Frontend, Backend, Game
+          DEvelop, Machine Learning, UI & UX y más.
+        </p>
+      </div>
+      <div class="paragraph">
+        <Star size={32} color={'#8A178C'} />
+        <p>
+          Constantemente se irá calificando las habilidades y competencias de
+          los usuarios en interesantes retos semanales que le harán
+          desenvolverse mejor cada vez.
+        </p>
+      </div>
+      <div class="paragraph">
+        <Community size={32} color={'#8A178C'} />
+        <p>
+          Estamos en comunidad, entre todos nos ayudamos a mejorar nuestra
+          habilidades y apoyarnos en nuestras debilidades para ser mejores cada
+          día.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -37,6 +65,47 @@
       display: flex;
       width: 90%;
       max-width: 880px;
+      justify-content: space-between;
+      margin-bottom: 5rem;
+
+      .text {
+        width: calc(50% - 1.5rem);
+
+        p {
+          font-family: var(--font-title);
+          font-weight: 400;
+          font-size: 18px;
+          color: var(--color-black-1);
+          margin-bottom: 2rem;
+        }
+      }
+
+      .card {
+        width: calc(50% - 1.5rem);
+        padding: 4rem 3rem;
+        background-color: var(--color-white-1);
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow) var(--color-gray-1);
+
+        .paragraph {
+          display: grid;
+          grid-template-columns: 2rem 1fr;
+          grid-row: 1fr;
+          column-gap: 2rem;
+          margin-bottom: 3.375rem;
+
+          &:last-child {
+            margin: 0;
+          }
+
+          p {
+            font-family: var(--font-title);
+            font-weight: 400;
+            font-size: 15px;
+            color: var(--color-black-1);
+          }
+        }
+      }
     }
   }
 </style>

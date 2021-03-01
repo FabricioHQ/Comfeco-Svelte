@@ -1,13 +1,13 @@
 <script>
-  import CommunityCardPage from './Community_Card/Community_Card_Page.svelte';
+  import CommunityCard from './Community_Card.svelte';
   export let comunidades;
 </script>
 
 <section>
   <h2>Comunidades</h2>
-  <div class="cards_page_comunidades">
+  <div class="cards">
     {#each comunidades as comunidad}
-      <CommunityCardPage {comunidad} />
+      <CommunityCard {comunidad} />
     {/each}
   </div>
 </section>
@@ -15,7 +15,6 @@
 <style lang="scss">
   section {
     width: 100%;
-    background-color: #edf2f6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +25,7 @@
       font-weight: 500;
       color: var(--color-primary-1);
     }
-    .cards_page_comunidades {
+    .cards {
       margin-top: 3rem;
       display: flex;
       flex-wrap: wrap;
