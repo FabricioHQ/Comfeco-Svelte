@@ -35,7 +35,7 @@
 <div class="ml-3 relative" bind:this={menu}>
   <div class="ml-4 flex items-center md:ml-6">
     <button
-      class="bg-purple-600 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-purple-600 focus:ring-white"
+      class="bg-purple-600 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-yellow-500"
     >
       <span class="sr-only">View notifications</span>
       <!-- Heroicon name: outline/bell -->
@@ -60,16 +60,15 @@
         <button
           on:click={() => (show = !show)}
           class="max-w-xs bg-purple-600 rounded-full flex items-center text-sm
-          focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+          focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-yellow-500"
           id="user-menu"
           aria-haspopup="true"
         >
-          <!-- <img class="w-10 h-10 rounded-full" src={user.picture} alt={user.name} /> -->
           <span class="sr-only">Open user menu</span>
           <img
-            class="h-8 w-8 rounded-full"
             src="/images/comfeco2.png"
-            alt="images"
+            alt="user-imagen"
+            class="h-8 w-8 shadow rounded-full max-w-full h-auto align-middle border-none "
           />
         </button>
       </div>
