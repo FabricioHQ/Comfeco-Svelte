@@ -3,6 +3,7 @@
   import CommunitySectionComponent from '../components/Community/Component/Community_Section.svelte';
   // import CommunityUnete from '../components/Community/Community_Unete.svelte';
   import LayoutBase from '../components/Layout/Layout_Base.svelte';
+  import HomeDescription from '../components/Home/Home_Description.svelte';
   // import LayoutBase from '../components/Layout/Layout_Base.svelte';
   let page: string = 'home';
 
@@ -34,6 +35,7 @@
 
 <LayoutBase {page}>
   <HomeBanner />
+  <HomeDescription />
   <CommunitySectionComponent {comunidades} />
   <!-- <CommunityUnete /> -->
 </LayoutBase>

@@ -19,7 +19,7 @@
     flex-direction: column;
     align-items: center;
     h2 {
-      margin-top: 5rem;
+      margin-top: 2rem;
       font-family: var(--font-title);
       font-size: 32px;
       font-weight: 500;
