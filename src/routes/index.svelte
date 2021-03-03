@@ -3,6 +3,8 @@
   import CommunitySectionComponent from '../components/Community/Component/Community_Section.svelte';
   // import CommunityUnete from '../components/Community/Community_Unete.svelte';
   import LayoutBase from '../components/Layout/Layout_Base.svelte';
+  import HomeDescription from '../components/Home/Home_Description.svelte';
+  import ContadorComponent from '../components/Utils/Contador/Component/Contador_Component.svelte';
   // import LayoutBase from '../components/Layout/Layout_Base.svelte';
   let page: string = 'home';
 
@@ -33,7 +35,9 @@
 </svelte:head>
 
 <LayoutBase {page}>
+  <ContadorComponent />
   <HomeBanner />
+  <HomeDescription />
   <CommunitySectionComponent {comunidades} />
   <!-- <CommunityUnete /> -->
 </LayoutBase>
