@@ -8,6 +8,8 @@
   import Button from '../../Auth/UI/Button.svelte';
   import Input from '../../Auth/UI/Input.svelte';
 
+  console.log('hola');
+
   let publicEmail = '';
   let publicPassword = '';
 

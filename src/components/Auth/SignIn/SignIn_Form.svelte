@@ -1,15 +1,19 @@
 <script>
   // import { currentUser } from '../../middleware/auth.js';
   import { createForm } from 'svelte-forms-lib';
-  import { goto } from '@sapper/app';
+  import { goto, stores } from '@sapper/app';
+  const { session } = stores();
   import * as yup from 'yup';
   // import Logo from '/images/comfeco2.png';
 
   import Button from '../../Auth/UI/Button.svelte';
   import Input from '../../Auth/UI/Input.svelte';
+  import SignIn from './SignIn.svelte';
 
   let publicEmail = '';
   let publicPassword = '';
+
+  console.log('hola');
 
   // export let auth;
 
@@ -39,14 +43,29 @@
       if (!errors.length) {
         try {
           const { email, password } = values;
-          firebase
-            .auth()
-            .signInWithEmailAndPassword(email, password)
-            .then((res) => {
-              publicEmail = email;
-              publicPassword = password;
-              goto('/dashboard');
+          SignIn();
+          const SignIn = async () => {
+            const response = await fetch('api/auth/signin', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json',
+              },
+              body: JSON.stringify({ email, password }),
             });
+
+            const parsed = await response.json();
+
+            if (parsed.error) {
+              alert = parsed.error;
+            } else {
+              $session.user = parsed.user;
+              await goto('/').then(() => {
+                location.reload();
+              });
+            }
+          };
+          SignIn();
         } catch (e) {
           let message = e.message || e;
           console.log('Something went wrong:', message);

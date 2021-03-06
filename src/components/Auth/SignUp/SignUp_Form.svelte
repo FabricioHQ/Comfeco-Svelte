@@ -1,12 +1,14 @@
 <script>
   import { createForm } from 'svelte-forms-lib';
-  import { goto } from '@sapper/app';
+  import { goto, stores } from '@sapper/app';
+  const { session } = stores();
   import * as yup from 'yup';
 
   // import comfecoLogo from 'images/comfeco2.png';
 
   import Button from '../../Auth/UI/Button.svelte';
   import Input from '../../Auth/UI/Input.svelte';
+  import SignIn from '../SignIn/SignIn.svelte';
 
   const { form, errors, handleChange, handleSubmit } = createForm({
     initialValues: {
@@ -42,13 +44,33 @@
     onSubmit: (values, form, errors) => {
       if (!errors.length) {
         try {
-          const { email, password1 } = values;
-          firebase
-            .auth()
-            .createUserWithEmailAndPassword(email, password1)
-            .then((res) => {
-              goto('/dashboard');
+          const headers = {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          };
+          const SignIn = async () => {
+            const { email, password1, username } = values;
+            console.log('asd2');
+            const response = await fetch('api/auth/signup', {
+              method: 'POST',
+              headers,
+              body: JSON.stringify({ username, email, password: password1 }),
             });
+
+            const parsed = await response.json();
+            console.log(parsed);
+
+            if (parsed.error) {
+              alert = parsed.error;
+            } else {
+              $session.user = parsed.user;
+              console.log('123');
+              await goto('/').then(() => {
+                location.reload();
+              });
+            }
+          };
+          SignIn();
         } catch (e) {
           let message = e.message || e;
           console.log('Something went wrong:', message);

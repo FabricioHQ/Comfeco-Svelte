@@ -1,0 +1,111 @@
+{
+  "cookie": {
+    "originalMaxAge": 604800000,
+    "expires": "2021-03-13T22:12:29.539Z",
+    "httpOnly": true,
+    "path": "/"
+  },
+  "__lastAccess": 1615068749540,
+  "user": {
+    "$__": {
+      "strictMode": true,
+      "selected": { "password": 0 },
+      "getters": {},
+      "_id": "6043fe396ecb5a0015261b73",
+      "populated": {
+        "general": {
+          "value": "6043fe396ecb5a0015261b73",
+          "options": {
+            "_docs": { "6043fe396ecb5a0015261b73": "6043fe396ecb5a0015261b73" },
+            "_childDocs": [
+              {
+                "cover": "https://comfeco-backend-svelte.herokuapp.com/api/v1/files/default/cover-default.jpg",
+                "_id": "6043fe396ecb5a0015261b73",
+                "first_name": "FabricioHQ",
+                "last_name": "No definido.",
+                "biography": "Aún no cuenta con una biografía.",
+                "description": "Aún no ceunta con una descripción.",
+                "birthdate": "2021-03-06T22:12:09.735Z",
+                "gender": "masculino",
+                "__v": 0
+              }
+            ],
+            "path": "general",
+            "_queryProjection": { "password": 0 },
+            "isVirtual": false,
+            "virtual": null
+          }
+        }
+      },
+      "wasPopulated": false,
+      "activePaths": {
+        "paths": {
+          "code": "init",
+          "password": "require",
+          "username": "init",
+          "email": "init",
+          "image": "init",
+          "_id": "init",
+          "createdAt": "init",
+          "updatedAt": "init",
+          "__v": "init",
+          "general": "init"
+        },
+        "states": {
+          "ignore": {},
+          "default": {},
+          "init": {
+            "_id": true,
+            "image": true,
+            "email": true,
+            "username": true,
+            "code": true,
+            "createdAt": true,
+            "updatedAt": true,
+            "__v": true,
+            "general": true
+          },
+          "modify": {},
+          "require": { "password": true }
+        },
+        "stateNames": ["require", "modify", "init", "default", "ignore"]
+      },
+      "pathsToScopes": {},
+      "cachedRequired": {},
+      "$setCalled": {},
+      "emitter": { "_events": {}, "_eventsCount": 0, "_maxListeners": 0 },
+      "$options": {
+        "skipId": true,
+        "isNew": false,
+        "willInit": true,
+        "defaults": true
+      }
+    },
+    "isNew": false,
+    "$locals": {},
+    "$op": null,
+    "_doc": {
+      "image": "https://comfeco-backend-svelte.herokuapp.com/api/v1/files/default/profile-default.png",
+      "_id": "6043fe396ecb5a0015261b73",
+      "email": "prueba2@prueba.com",
+      "username": "@FabricioHQ",
+      "code": 489,
+      "createdAt": "2021-03-06T22:12:09.745Z",
+      "updatedAt": "2021-03-06T22:12:09.775Z",
+      "__v": 0,
+      "general": {
+        "cover": "https://comfeco-backend-svelte.herokuapp.com/api/v1/files/default/cover-default.jpg",
+        "_id": "6043fe396ecb5a0015261b73",
+        "first_name": "FabricioHQ",
+        "last_name": "No definido.",
+        "biography": "Aún no cuenta con una biografía.",
+        "description": "Aún no ceunta con una descripción.",
+        "birthdate": "2021-03-06T22:12:09.735Z",
+        "gender": "masculino",
+        "__v": 0
+      }
+    },
+    "$init": true,
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNDNmZTM5NmVjYjVhMDAxNTI2MWI3MyIsImlhdCI6MTYxNTA2ODcyOSwiZXhwIjoxNjE1MzI3OTI5fQ.8iLvzDYXVNMK5r3ltFKdoMzF3GgIaeYqKpCkWfT1tLk"
+  }
+}
