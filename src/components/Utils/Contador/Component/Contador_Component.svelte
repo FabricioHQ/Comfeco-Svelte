@@ -6,7 +6,7 @@
   $: days = 0;
 
   const timerUpdate = setInterval(() => {
-    let time = counter('Mar 30 2021 17:17:27');
+    let time = counter('Mar 20 2021 12:00:00');
     seconds = time.seconds;
     minutes = time.minutes;
     hours = time.hours;

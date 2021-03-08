@@ -1,5 +1,7 @@
 <script lang="ts">
   import LayoutBase from '../../components/Layout/Layout_Base.svelte';
+  import WorkshopBanner from '../../components/Workshop/Workshop_Banner.svelte';
+  import WorkshopTalleresCercanos from '../../components/Workshop/Workshop_TalleresCercanos.svelte';
   let page: string = 'workshops';
 </script>
 
@@ -8,7 +10,8 @@
 </svelte:head>
 
 <LayoutBase {page}>
-  <h1>Workshops</h1>
+  <WorkshopBanner />
+  <WorkshopTalleresCercanos />
 </LayoutBase>
 
 <style>
