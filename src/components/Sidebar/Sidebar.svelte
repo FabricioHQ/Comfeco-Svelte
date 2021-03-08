@@ -232,7 +232,7 @@
       <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
         <li class="my-px">
           <a
-            href="."
+            href="/badges"
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span
@@ -312,7 +312,7 @@
         </li>
         <li class="my-px">
           <a
-            href="signin"
+            href="/auth/signin"
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span class="flex items-center justify-center text-lg text-red-400">
