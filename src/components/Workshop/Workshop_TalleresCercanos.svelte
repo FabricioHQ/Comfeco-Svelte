@@ -31,23 +31,23 @@
     <div class="taller">
       <div class="cover">
         <img
-          src="/images/workshop/workshop_taller_machine_learning.jpg"
+          src="/images/workshop/workshop_taller_frontend_and_backend.png"
           alt="taller de machine learning"
         />
         <div class="fecha">
           <div class="show">
-            <span class="date">23 sep</span>
-            <span class="participantes">1658 participantes</span>
+            <span class="date">25 dec</span>
+            <span class="participantes">2358 participantes</span>
           </div>
           <div class="info">
-            <p>16:00 hrs - PER, COL, PAN, ECU</p>
-            <p>17:00 hrs - VEN, BOL, BRA</p>
-            <p>18:00 hrs - CHI, ARG</p>
+            <p>12:00 hrs - PER, COL, PAN, ECU</p>
+            <p>13:00 hrs - VEN, BOL, BRA</p>
+            <p>14:00 hrs - CHI, ARG</p>
           </div>
         </div>
       </div>
       <div class="content">
-        <h3 class="title">Mi primera red neuronal</h3>
+        <h3 class="title">Full Stack: Frontend & Backend</h3>
         <p class="description">
           Participa en este primer evento de machine learning. Desarrolla una
           red neuronal que aprenda a diferencia las malas palabras de un texto.
