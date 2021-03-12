@@ -1,11 +1,11 @@
 <script lang="ts">
-  import LayoutBase from '../../components/Layout/Layout_Base.svelte';
+  import LayoutBase from '../../../components/Layout/Admin.svelte';
 
-  import BadgesSection from '../../components/Badges/Page/Badges_Section.svelte';
+  import BadgesSection from '../../../components/Badges/Page/Badges_Section.svelte';
 
   let page: string = 'badges';
 
-  let comunidades = [
+  let badges = [
     {
       name: 'Comunidad de Programadores',
       img: '/images/community/comunidad_de_programadores.png',
@@ -123,7 +123,7 @@
 </svelte:head>
 
 <LayoutBase {page}>
-  <BadgesSection {comunidades} />
+  <BadgesSection {badges} />
 </LayoutBase>
 
 <style>

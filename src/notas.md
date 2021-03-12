@@ -7,3 +7,10 @@ npm install svelte-forms-lib
 ### Instalar componente para validaciones
 
 npm i yup
+
+### Dashboard
+
+Se necesita crear las paginas que se podran ver una vez que nos hemos registrado como administrador
+actualmente solo agregue dos de muestras
+logros y
+teams

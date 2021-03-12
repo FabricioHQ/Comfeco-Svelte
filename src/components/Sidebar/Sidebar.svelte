@@ -1,8 +1,6 @@
 <script lang="ts">
   import Logo from '../Utils/Icons/Logo.svelte';
 
-  // import { link } from "svelte-routing";
-
   // core components
   // import NotificationDropdown from "components/Dropdowns/NotificationDropdown.svelte";
   // import UserDropdown from "components/Dropdowns/UserDropdown.svelte";
@@ -13,7 +11,19 @@
     collapseShow = classes;
   }
 
-  // export let location;
+  export let page;
+  let items = {
+    home: page === 'home' ? true : false,
+    badges: page === 'badges' ? true : false,
+    team: page === 'team' ? true : false,
+    workshops: page === 'workshops' ? true : false,
+    projects: page === 'projects' ? true : false,
+  };
+
+  const handleClick = () => {
+    console.log(page);
+  };
+  console.log(page);
 </script>
 
 <nav
@@ -166,7 +176,8 @@
         </li>
         <li class="my-px">
           <a
-            href="."
+            href="/admin/team"
+            class:active={items.team}
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span
@@ -224,6 +235,7 @@
       <hr class="my-4 md:min-w-full" />
       <!-- Heading -->
       <h6
+        on:click={handleClick}
         class="md:min-w-full text-gray-600 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
       >
         Account
@@ -232,7 +244,8 @@
       <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
         <li class="my-px">
           <a
-            href="/badges"
+            href="/admin/badges"
+            class:active={items.badges}
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span
@@ -257,7 +270,8 @@
         </li>
         <li class="my-px">
           <a
-            href="."
+            href="/admin/badges"
+            class:active={items.events}
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span

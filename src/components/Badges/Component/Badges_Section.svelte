@@ -1,6 +1,6 @@
 <script lang="ts">
-  import CommunityCard from './Community_Card.svelte';
-  export let comunidades;
+  // import CommunityCard from './Community_Card.svelte';
+  export let badges;
 </script>
 
 <section class="component">
@@ -11,8 +11,8 @@
       <a href="/community">View all</a>
     </div>
     <div class="commnity_recomend">
-      {#each comunidades as comunidad}
-        <CommunityCard {comunidad} />
+      {#each badges as comunidad}
+        <!-- <CommunityCard {comunidad} /> -->
       {/each}
     </div>
   </div>

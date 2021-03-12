@@ -1,10 +1,11 @@
 <script>
-  import BadgesCard from './Badges_Cards.svelte';
-  export let badges;
+  import TeamsCard from './Teams_Cards.svelte';
+
+  export let teams;
 </script>
 
 <section>
-  <h2>Insignias</h2>
+  <h2>Teams</h2>
   <div id="container" class="w-4/5 mx-auto">
     <div class="flex flex-col sm:flex-row">
       <!-- Card 1 -->
@@ -12,11 +13,11 @@
         <div
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4"
         >
-          {#each badges as logros}
+          {#each teams as team}
             <div
               class="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg"
             >
-              <BadgesCard {logros} />
+              <TeamsCard {team} />
             </div>
           {/each}
         </div>

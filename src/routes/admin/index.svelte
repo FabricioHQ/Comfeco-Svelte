@@ -1,14 +1,14 @@
 <script lang="ts">
   import LayoutBase from '../../components/Layout/Admin.svelte';
 
-  let location: string = 'dashboard';
+  let page: string = 'admin';
 </script>
 
 <svelte:head>
   <title>Dashboard</title>
 </svelte:head>
 
-<LayoutBase {location} />
+<LayoutBase {page} />
 
 <style>
 </style>

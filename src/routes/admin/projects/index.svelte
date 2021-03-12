@@ -1,7 +1,7 @@
 <script lang="ts">
-  // import LayoutBase from '../../components/Layout/Layout_Base.svelte';
+  import LayoutBase from '../../../components/Layout/Admin.svelte';
 
-  import BadgesSection from '../../components/Badges/Page/Badges_Section.svelte';
+  import BadgesSection from '../../../components/Badges/Page/Badges_Section.svelte';
 
   let page: string = 'badges';
 
@@ -122,9 +122,9 @@
   <title>Insignias</title>
 </svelte:head>
 
-<!-- <LayoutBase {page}> -->
-<BadgesSection {comunidades} />
+<LayoutBase {page}>
+  <BadgesSection {comunidades} />
+</LayoutBase>
 
-<!-- </LayoutBase> -->
 <style>
 </style>

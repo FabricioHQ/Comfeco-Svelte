@@ -1,7 +1,13 @@
-<div>
-  <div class="flex h-screen bg-purple-100 dark:bg-gray-800 font-roboto">
-    <!-- <Sidebar /> -->
+<script>
+  // import Sidebar from '../Sidebar/Sidebar.svelte';
 
+  export let page;
+</script>
+
+<div>
+  <!-- <Sidebar {page} /> -->
+  <div class="flex h-screen bg-purple-100 dark:bg-gray-800 font-roboto">
+    <!-- <div class="relative md:ml-64 bg-gray-200"> -->
     <div class="flex-1 flex flex-col overflow-hidden">
       <header class="flex justify-between items-center p-6">
         <div class="flex items-center space-x-4 lg:space-x-0">
@@ -27,6 +33,7 @@
         </div>
       </main>
     </div>
+    <!-- </div> -->
   </div>
 </div>
 
