@@ -8,6 +8,12 @@ npm install svelte-forms-lib
 
 npm i yup
 
+### Teams
+
+### Instalar componente @popperjs/core
+
+npm i @popperjs/core
+
 ### Dashboard
 
 Se necesita crear las paginas que se podran ver una vez que nos hemos registrado como administrador
