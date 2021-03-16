@@ -15,7 +15,10 @@
   let items = {
     home: page === 'home' ? true : false,
     badges: page === 'badges' ? true : false,
+    teams: page === 'teams' ? true : false,
     team: page === 'team' ? true : false,
+    profile: page === 'profile' ? true : false,
+    settings: page === 'settings' ? true : false,
     workshops: page === 'workshops' ? true : false,
     projects: page === 'projects' ? true : false,
   };
@@ -44,9 +47,6 @@
     <div class="sidenav-header d-flex align-items-center">
       <a href="." class="navbar-brand">
         <Logo size={48} />
-        <!-- <img
-          src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro-svelte/red.png"
-          alt="Sidebar logo" class="navbar-brand-img"> -->
       </a>
       <div class="ml-auto">
         <div
@@ -83,7 +83,7 @@
             <!-- <a use:link
               class="md:block text-left md:pb-2 text-gray-700 mr-0 inline-block whitespace-no-wrap text-sm uppercase font-bold p-4 px-0"
               href=".">
-              Notus Svelte
+              COMFECO
             </a> -->
           </div>
           <div class="w-6/12 flex justify-end">
@@ -142,7 +142,7 @@
                 />
               </svg>
             </span>
-            <span class="ml-3">Manager </span>
+            <span class="ml-3">Teams </span>
             <span
               class="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-300 h-6 px-2 rounded-full ml-auto"
               >3</span
@@ -176,8 +176,8 @@
         </li>
         <li class="my-px">
           <a
-            href="/admin/team"
-            class:active={items.team}
+            href="/admin/teams"
+            class:active={items.teams}
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span
@@ -197,7 +197,7 @@
                 />
               </svg>
             </span>
-            <span class="ml-3">Team</span>
+            <span class="ml-3">Teams</span>
             <span
               class="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-300 h-6 px-2 rounded-full ml-auto"
               >1k</span
@@ -244,8 +244,8 @@
       <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
         <li class="my-px">
           <a
-            href="/admin/badges"
-            class:active={items.badges}
+            href="/admin/profile"
+            class:active={items.profile}
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span
@@ -271,7 +271,7 @@
         <li class="my-px">
           <a
             href="/admin/badges"
-            class:active={items.events}
+            class:active={items.badges}
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span
@@ -300,7 +300,8 @@
         </li>
         <li class="my-px">
           <a
-            href="."
+            href="/admin/settings"
+            class:active={items.settings}
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span
@@ -322,6 +323,36 @@
               </svg>
             </span>
             <span class="ml-3">Settings</span>
+          </a>
+        </li>
+        <li class="my-px">
+          <a
+            href="/admin/team"
+            class:active={items.team}
+            class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
+          >
+            <span
+              class="flex items-center justify-center text-lg text-gray-500"
+            >
+              <svg
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </span>
+            <span class="ml-3">The Team</span>
+            <span
+              class="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-300 h-6 px-2 rounded-full ml-auto"
+              >1k</span
+            >
           </a>
         </li>
         <li class="my-px">
