@@ -1,7 +1,7 @@
 <script>
   import TeamCard from './OurTeam_Cards.svelte';
 
-  export let teamPeople;
+  export let ourTeam;
   export let color = 'light';
 </script>
 
@@ -14,7 +14,7 @@
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4"
     >
-      {#each teamPeople as team}
+      {#each ourTeam as team}
         <!-- <div class="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg"> -->
         <TeamCard {team} />
         <!-- </div> -->

@@ -6,7 +6,7 @@
   // export let color = "light";
   let page: string = 'The Team';
 
-  let theTeam = [
+  let ourTeam = [
     {
       name: 'Erick Marcia',
       img:
@@ -116,7 +116,7 @@
 
 <LayoutBase {page}>
   <!-- <h1>Teams</h1> -->
-  <TeamSection {theTeam} />
+  <TeamSection {ourTeam} />
 </LayoutBase>
 
 <style>

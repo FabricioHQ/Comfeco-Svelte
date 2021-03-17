@@ -16,7 +16,7 @@
     home: page === 'home' ? true : false,
     badges: page === 'badges' ? true : false,
     teams: page === 'teams' ? true : false,
-    team: page === 'team' ? true : false,
+    ourTeam: page === 'ourTeam' ? true : false,
     profile: page === 'profile' ? true : false,
     settings: page === 'settings' ? true : false,
     workshops: page === 'workshops' ? true : false,
@@ -327,8 +327,8 @@
         </li>
         <li class="my-px">
           <a
-            href="/admin/team"
-            class:active={items.team}
+            href="/admin/ourTeam"
+            class:active={items.ourTeam}
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span

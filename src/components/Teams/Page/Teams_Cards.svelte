@@ -133,7 +133,7 @@
                   class:active={items.team}
                   class="unirse">Unirse</a
                 >
-                <TeamSection {teamCommunity} />
+                <!-- <TeamSection {teamCommunity} /> -->
               </div>
               <!-- <div class="m-3"> -->
               <!-- <button
