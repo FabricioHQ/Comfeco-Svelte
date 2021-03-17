@@ -23,10 +23,10 @@
     projects: page === 'projects' ? true : false,
   };
 
-  const handleClick = () => {
-    console.log(page);
-  };
-  console.log(page);
+  // const handleClick = () => {
+  //   console.log(page);
+  // };
+  // console.log(page);
 </script>
 
 <nav
@@ -348,11 +348,11 @@
                 />
               </svg>
             </span>
-            <span class="ml-3">The Team</span>
-            <span
+            <span class="ml-3">Our Team</span>
+            <!-- <span
               class="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-300 h-6 px-2 rounded-full ml-auto"
               >1k</span
-            >
+            > -->
           </a>
         </li>
         <li class="my-px">

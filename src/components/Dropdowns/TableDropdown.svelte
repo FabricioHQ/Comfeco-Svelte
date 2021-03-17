@@ -20,6 +20,16 @@
       });
     }
   };
+
+  export let teampeople;
+  export let page;
+  let items = {
+    home: page === 'home' ? true : false,
+    badges: page === 'badges' ? true : false,
+    teams: page === 'teams' ? true : false,
+    team: page === 'team' ? true : false,
+    profile: page === 'profile' ? true : false,
+  };
 </script>
 
 <div>
@@ -38,7 +48,8 @@
       : 'hidden'}"
   >
     <a
-      href="#pablo"
+      href="/admin/teams/team"
+      class:active={items.team}
       on:click={(e) => e.preventDefault()}
       class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
     >

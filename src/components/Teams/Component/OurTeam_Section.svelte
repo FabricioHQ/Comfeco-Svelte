@@ -1,20 +1,12 @@
 <script>
-  import TeamCard from './Team_Cards.svelte';
+  import TeamCard from './OurTeam_Cards.svelte';
 
-  export let theTeam;
+  export let teamPeople;
   export let color = 'light';
 </script>
 
-<!-- <section>
-  <h2>The Team</h2>
-
-  {#each theTeam as team}
-  <TeamCard {team} />
-  {/each}
-</section> -->
-
 <section>
-  <h2>The Team</h2>
+  <h2>Our Team</h2>
   <!-- <div id="container" class="w-4/5 mx-auto"> -->
   <!-- <div class="flex flex-col sm:flex-row"> -->
   <!-- Card 1 -->
@@ -22,7 +14,7 @@
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4"
     >
-      {#each theTeam as team}
+      {#each teamPeople as team}
         <!-- <div class="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg"> -->
         <TeamCard {team} />
         <!-- </div> -->

@@ -1,8 +1,22 @@
 <script>
   import TableDropdown from '../../../components/Dropdowns/TableDropdown.svelte';
+  import LayoutBase from '../../../components/Layout/Admin.svelte';
+  import Modal from '../../../components/Utils/Modal/Modal.svelte';
+
+  import TeamSection from '../../../components/Teams/Component/Teams_Section.svelte';
 
   export let color = 'light';
   export let teams;
+  export let teamCommunity = teams;
+
+  export let page;
+  let items = {
+    home: page === 'home' ? true : false,
+    teams: page === 'teams' ? true : false,
+    team: page === 'team' ? true : false,
+  };
+
+  let showPage = false;
 </script>
 
 <!-- component -->
@@ -58,6 +72,14 @@
               ? 'bg-gray-100 text-gray-600 border-gray-200'
               : 'bg-red-700 text-red-200 border-red-600'}"
           >
+            Options
+          </th>
+          <th
+            class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left {color ===
+            'light'
+              ? 'bg-gray-100 text-gray-600 border-gray-200'
+              : 'bg-red-700 text-red-200 border-red-600'}"
+          >
             Status
           </th>
           <th
@@ -103,6 +125,25 @@
             </th>
             <td class="font-bold px-6 align-middle text-xs ">
               {team.project}
+            </td>
+            <td class="font-bold px-6 align-middle text-xs ">
+              <div class="info">
+                <a
+                  href="/admin/teams/team"
+                  class:active={items.team}
+                  class="unirse">Unirse</a
+                >
+                <TeamSection {teamCommunity} />
+              </div>
+              <!-- <div class="m-3"> -->
+              <!-- <button
+              class="w-32 bg-white tracking-wide text-gray-500 font-bold rounded border-b-2 border-purple-500 hover:border-purple-600 hover:bg-purple-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">
+              <span class="mx-auto">Unirse</span>
+            </button> -->
+              <!-- <button on:click="{() => showPage = true}">
+              Unirse
+            </button> -->
+              <!-- <TeamSection {teams} /> -->
             </td>
             <td class="px-8 align-middle text-xs ">
               <div class="flex items-center">
@@ -211,5 +252,17 @@
 
   .status.undefined {
     background: #ef4444;
+  }
+
+  a {
+    height: 32px;
+    display: inline-grid;
+    place-items: center;
+    padding: 0 1.75rem;
+    border-radius: var(--border-radius);
+    background-color: var(--color-primary-1);
+    font-family: var(--font-title);
+    font-size: 14px;
+    color: var(--color-white-1);
   }
 </style>
