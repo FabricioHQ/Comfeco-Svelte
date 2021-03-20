@@ -65,7 +65,7 @@
             } else {
               $session.user = parsed.user;
               console.log('123');
-              await goto('/').then(() => {
+              await goto('/admin/teams').then(() => {
                 location.reload();
               });
             }

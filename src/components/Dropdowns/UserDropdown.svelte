@@ -95,7 +95,7 @@
             role="menuitem">Settings</a
           >
           <a
-            href="/signin"
+            href="auth/signin"
             class="block px-4 py-2 hover:bg-purple-600 hover:text-white"
             role="menuitem">Sign out</a
           >

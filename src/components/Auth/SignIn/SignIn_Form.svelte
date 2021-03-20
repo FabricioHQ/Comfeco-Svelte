@@ -60,7 +60,7 @@
               alert = parsed.error;
             } else {
               $session.user = parsed.user;
-              await goto('/').then(() => {
+              await goto('/admin/teams').then(() => {
                 location.reload();
               });
             }
