@@ -21,7 +21,7 @@
     }
   };
 
-  export let teampeople;
+  export let team;
   export let page;
   let items = {
     home: page === 'home' ? true : false,

@@ -8,8 +8,8 @@
 <section>
   <h2>Teams</h2>
 
-  {#each teamCommunity as teams}
-    <TeamsCard {teams} />
+  {#each teamCommunity as teamsx}
+    <TeamsCard {teamsx} />
   {/each}
 </section>
 

@@ -3,11 +3,10 @@
   import LayoutBase from '../../../components/Layout/Admin.svelte';
   import Modal from '../../../components/Utils/Modal/Modal.svelte';
 
-  import TeamSection from '../../../components/Teams/Component/Teams_Section.svelte';
+  // import TeamSection from '../../../components/Teams/Component/Teams_Section.svelte';
 
   export let color = 'light';
-  export let teams;
-  export let teamCommunity = teams;
+  export let teamsx;
 
   export let page;
   let items = {
@@ -17,6 +16,7 @@
   };
 
   let showPage = false;
+  let showModal = false;
 </script>
 
 <!-- component -->
@@ -31,7 +31,7 @@
       <div class="relative w-full px-4 max-w-full flex-grow flex-1">
         <span class="flex items-center justify-left text-lg text-purple-900">
           <img
-            src={teams.img}
+            src={teamsx.img}
             class="h-12 w-12 bg-white rounded-full border"
             alt="..."
           />
@@ -40,7 +40,7 @@
               ? 'text-gray-800'
               : 'text-white'}"
           >
-            {teams.name}
+            {teamsx.name}
           </h3>
         </span>
       </div>
@@ -107,11 +107,11 @@
         </tr>
       </thead>
       <tbody>
-        {#each teams.team as team}
+        {#each teamsx.team as team}
           <tr>
             <th class="px-6 align-middle text-xs text-left flex items-center">
               <img
-                src={teams.img}
+                src={teamsx.img}
                 class="h-12 w-12 bg-white rounded-full border"
                 alt="..."
               />
@@ -127,23 +127,9 @@
               {team.project}
             </td>
             <td class="font-bold px-6 align-middle text-xs ">
-              <div class="info">
-                <a
-                  href="/admin/teams/team"
-                  class:active={items.team}
-                  class="unirse">Unirse</a
-                >
-                <!-- <TeamSection {teamCommunity} /> -->
-              </div>
-              <!-- <div class="m-3"> -->
-              <!-- <button
-              class="w-32 bg-white tracking-wide text-gray-500 font-bold rounded border-b-2 border-purple-500 hover:border-purple-600 hover:bg-purple-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">
-              <span class="mx-auto">Unirse</span>
-            </button> -->
-              <!-- <button on:click="{() => showPage = true}">
-              Unirse
-            </button> -->
-              <!-- <TeamSection {teams} /> -->
+              <!-- <div class="info"> -->
+              <!-- <a href="/admin/teams/team" class:active={items.team} class="unirse">Unirse</a> -->
+              <button on:click={() => (showModal = true)}> Unirse </button>
             </td>
             <td class="px-8 align-middle text-xs ">
               <div class="flex items-center">
@@ -220,7 +206,7 @@
               </div>
             </td>
             <td class="px-6 align-middle text-xs p-4 text-right">
-              <TableDropdown />
+              <TableDropdown {team} {page} />
             </td>
           </tr>
         {/each}
@@ -228,6 +214,30 @@
     </table>
   </div>
 </div>
+
+{#if showModal}
+  <Modal on:close={() => (showModal = false)}>
+    <h2 slot="header">
+      modal
+      <small><em>adjective</em> mod·al \ˈmō-dəl\</small>
+    </h2>
+
+    <ol class="definition-list">
+      <li>of or relating to modality in logic</li>
+      <li>
+        containing provisions as to the mode of procedure or the manner of
+        taking effect —used of a contract or legacy
+      </li>
+      <li>of or relating to a musical mode</li>
+      <li>of or relating to structure as opposed to substance</li>
+      <li>
+        of, relating to, or constituting a grammatical form or category
+        characteristically indicating predication
+      </li>
+      <li>of or relating to a statistical mode</li>
+    </ol>
+  </Modal>
+{/if}
 
 <style>
   .status {
