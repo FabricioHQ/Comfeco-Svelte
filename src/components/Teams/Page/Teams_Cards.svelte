@@ -128,8 +128,13 @@
             </td>
             <td class="font-bold px-6 align-middle text-xs ">
               <!-- <div class="info"> -->
-              <!-- <a href="/admin/teams/team" class:active={items.team} class="unirse">Unirse</a> -->
-              <button on:click={() => (showModal = true)}> Unirse </button>
+              <!-- href="/admin/teams/team" -->
+              <a
+                on:click={() => (showModal = true)}
+                class:active={items.team}
+                class="unirse">Unirse</a
+              >
+              <!-- <button class="unirse" on:click={()=> (showModal = true)} > Unirse </button> -->
             </td>
             <td class="px-8 align-middle text-xs ">
               <div class="flex items-center">
@@ -217,24 +222,10 @@
 
 {#if showModal}
   <Modal on:close={() => (showModal = false)}>
-    <h2 slot="header">
-      modal
-      <small><em>adjective</em> mod·al \ˈmō-dəl\</small>
-    </h2>
+    <h2 slot="header">Unime a este equipo</h2>
 
     <ol class="definition-list">
-      <li>of or relating to modality in logic</li>
-      <li>
-        containing provisions as to the mode of procedure or the manner of
-        taking effect —used of a contract or legacy
-      </li>
-      <li>of or relating to a musical mode</li>
-      <li>of or relating to structure as opposed to substance</li>
-      <li>
-        of, relating to, or constituting a grammatical form or category
-        characteristically indicating predication
-      </li>
-      <li>of or relating to a statistical mode</li>
+      <li>Ya eres Parte de este equipo</li>
     </ol>
   </Modal>
 {/if}

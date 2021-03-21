@@ -374,116 +374,109 @@
         Teams COMFECO
       </h6>
       <!-- Navigation -->
-      <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
-        <li class="my-px">
-          <a
-            href="https://svelte.dev/"
-            class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
+      <!-- <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4"> -->
+      <!-- <li class="my-px"> -->
+      <!-- <a href="https://svelte.dev/"> -->
+      <a
+        href="https://svelte.dev/"
+        class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
+      >
+        <span class="flex items-center justify-center text-lg text-gray-500">
+          <svg
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-6 w-6"
           >
-            <span
-              class="flex items-center justify-center text-lg text-gray-500"
-            >
-              <svg
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="h-6 w-6"
-              >
-                <path
-                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                />
-              </svg>
-            </span>
-            <span class="ml-3">Svelte</span>
-            <!-- <span
+            <path
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            />
+          </svg>
+        </span>
+        <span class="ml-3">Svelte</span>
+        <!-- <span
               class="flex items-center justify-center text-sm text-red-500 font-semibold bg-red-300 h-6 px-2 rounded-full ml-auto">30</span> -->
-          </a>
-        </li>
-        <li class="my-px">
-          <a
-            href="https://reactjs.org/"
-            class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
+      </a>
+      <!-- </li> -->
+      <!-- <li class="my-px"> -->
+      <a
+        href="https://reactjs.org/"
+        class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
+      >
+        <span class="flex items-center justify-center text-lg text-gray-500">
+          <svg
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-6 w-6"
           >
-            <span
-              class="flex items-center justify-center text-lg text-gray-500"
-            >
-              <svg
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="h-6 w-6"
-              >
-                <path
-                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                />
-              </svg>
-            </span>
-            <span class="ml-3">React</span>
-            <!-- <span
+            <path
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            />
+          </svg>
+        </span>
+        <span class="ml-3">React</span>
+        <!-- <span
               class="flex items-center justify-center text-sm text-red-500 font-semibold bg-red-300 h-6 px-2 rounded-full ml-auto">10</span> -->
-          </a>
-        </li>
-        <li class="my-px">
-          <a
-            href="https://angularjs.org/"
-            class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
+      </a>
+      <!-- </li> -->
+      <!-- <li class="my-px"> -->
+      <a
+        href="https://angularjs.org/"
+        class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
+      >
+        <span class="flex items-center justify-center text-lg text-gray-500">
+          <svg
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-6 w-6"
           >
-            <span
-              class="flex items-center justify-center text-lg text-gray-500"
-            >
-              <svg
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="h-6 w-6"
-              >
-                <path
-                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                />
-              </svg>
-            </span>
-            <span class="ml-3">Angular</span>
-            <!-- <span
+            <path
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            />
+          </svg>
+        </span>
+        <span class="ml-3">Angular</span>
+        <!-- <span
               class="flex items-center justify-center text-sm text-red-500 font-semibold bg-red-300 h-6 px-2 rounded-full ml-auto">10</span> -->
-          </a>
-        </li>
-        <li class="my-px">
-          <a
-            href="https://vuejs.org/"
-            class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
+      </a>
+      <!-- </li> -->
+      <!-- <li class="my-px"> -->
+      <a
+        href="https://vuejs.org/"
+        class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
+      >
+        <span class="flex items-center justify-center text-lg text-gray-500">
+          <svg
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-6 w-6"
           >
-            <span
-              class="flex items-center justify-center text-lg text-gray-500"
-            >
-              <svg
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="h-6 w-6"
-              >
-                <path
-                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                />
-              </svg>
-            </span>
-            <span class="ml-3">Vue</span>
-            <!-- <span
+            <path
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            />
+          </svg>
+        </span>
+        <span class="ml-3">Vue</span>
+        <!-- <span
               class="flex items-center justify-center text-sm text-red-500 font-semibold bg-red-300 h-6 px-2 rounded-full ml-auto">10</span> -->
-          </a>
-        </li>
-      </ul>
+      </a>
+      <!-- </li> -->
+      <!-- </ul> -->
     </div>
   </div>
 </nav>
