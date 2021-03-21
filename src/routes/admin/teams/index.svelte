@@ -1,7 +1,15 @@
 <script lang="ts">
   import LayoutBase from '../../../components/Layout/Admin.svelte';
-
   import TeamSection from '../../../components/Teams/Page/Teams_Section.svelte';
+
+  import { user } from '../../../stores/current_user.js';
+
+  export async function preload(page, session) {
+    let { user } = session;
+    // if (!user) {
+    //   return this.redirect(302, '/signin');
+    // }
+  }
 
   let page: string = 'teams';
 
@@ -352,6 +360,8 @@
 </svelte:head>
 
 <LayoutBase {page}>
+  <!-- <h1>Welcome {$user.email || $user.displayName }</h1> -->
+
   <!-- <h1>Teams</h1> -->
   <TeamSection {teamCommunity} />
 </LayoutBase>

@@ -151,7 +151,7 @@
         </li>
         <li class="my-px">
           <a
-            href="."
+            href="/admin/badges"
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span
@@ -171,7 +171,7 @@
                 />
               </svg>
             </span>
-            <span class="ml-3">Tasks</span>
+            <span class="ml-3">Badges</span>
           </a>
         </li>
         <li class="my-px">
@@ -204,31 +204,17 @@
             >
           </a>
         </li>
-        <li class="my-px">
-          <a
-            href="."
-            class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
-          >
-            <span
-              class="flex items-center justify-center text-lg text-green-400"
-            >
-              <svg
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="h-6 w-6"
-              >
-                <path
-                  d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
+        <!-- <li class="my-px">
+          <a href="." class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400">
+            <span class="flex items-center justify-center text-lg text-green-400">
+              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                stroke="currentColor" class="h-6 w-6">
+                <path d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
             <span class="ml-3">Add new</span>
           </a>
-        </li>
+        </li> -->
       </ul>
 
       <!-- Divider -->
@@ -391,7 +377,7 @@
       <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
         <li class="my-px">
           <a
-            href="."
+            href="https://svelte.dev/"
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span
@@ -412,15 +398,13 @@
               </svg>
             </span>
             <span class="ml-3">Svelte</span>
-            <span
-              class="flex items-center justify-center text-sm text-red-500 font-semibold bg-red-300 h-6 px-2 rounded-full ml-auto"
-              >30</span
-            >
+            <!-- <span
+              class="flex items-center justify-center text-sm text-red-500 font-semibold bg-red-300 h-6 px-2 rounded-full ml-auto">30</span> -->
           </a>
         </li>
         <li class="my-px">
           <a
-            href="."
+            href="https://reactjs.org/"
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span
@@ -441,15 +425,13 @@
               </svg>
             </span>
             <span class="ml-3">React</span>
-            <span
-              class="flex items-center justify-center text-sm text-red-500 font-semibold bg-red-300 h-6 px-2 rounded-full ml-auto"
-              >10</span
-            >
+            <!-- <span
+              class="flex items-center justify-center text-sm text-red-500 font-semibold bg-red-300 h-6 px-2 rounded-full ml-auto">10</span> -->
           </a>
         </li>
         <li class="my-px">
           <a
-            href="."
+            href="https://angularjs.org/"
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span
@@ -470,15 +452,13 @@
               </svg>
             </span>
             <span class="ml-3">Angular</span>
-            <span
-              class="flex items-center justify-center text-sm text-red-500 font-semibold bg-red-300 h-6 px-2 rounded-full ml-auto"
-              >10</span
-            >
+            <!-- <span
+              class="flex items-center justify-center text-sm text-red-500 font-semibold bg-red-300 h-6 px-2 rounded-full ml-auto">10</span> -->
           </a>
         </li>
         <li class="my-px">
           <a
-            href="."
+            href="https://vuejs.org/"
             class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-purple-400"
           >
             <span
@@ -499,10 +479,8 @@
               </svg>
             </span>
             <span class="ml-3">Vue</span>
-            <span
-              class="flex items-center justify-center text-sm text-red-500 font-semibold bg-red-300 h-6 px-2 rounded-full ml-auto"
-              >10</span
-            >
+            <!-- <span
+              class="flex items-center justify-center text-sm text-red-500 font-semibold bg-red-300 h-6 px-2 rounded-full ml-auto">10</span> -->
           </a>
         </li>
       </ul>
